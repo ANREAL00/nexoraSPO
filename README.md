@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nexora
+
+Учебное приложение «Интеллектуальный холст знаний» на Next.js, TypeScript и Supabase.
+
+Схема БД, две миграции, RLS по ролям, pgvector и приватное хранилище уже настроены в Supabase. Описание данных, ограничения, RPC и команды повторного запуска 217 проверок: [инструкция по базе данных](supabase/README.md).
+
+Типы БД: `lib/supabase/database.types.ts`. Исходное ТЗ находится в родительской папке `Project NEXORA`.
+
+Настройка Storage, Gmail SMTP и переменных: [окружения и почта](docs/environments.md). `.env.example` и `.env.smtp.example` содержат шаблоны без секретов. Рабочие `.env.local` и `.env.smtp.local` игнорируются Git. Фактическое подключение Gmail ожидает учетные данные; интерфейс авторизации остается отдельной задачей.
+
+Веб-интерфейс пока остается заготовкой [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
